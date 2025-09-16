@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Personal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+ <!-- Pantalla de carga -->
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+ 
+  <!-- Título -->
+  <header id="titulo">
+    <h1>Joaquin Orellana</h1>
+  </header>
+  
+  <!-- Navegación -->
+  <nav id="menu">
+    <ul>
+      <li><a href="#info">Sobre mí</a></li>
+      <li><a href="#playlist">Música</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Contenido -->
+  <main id="contenido">
+    
+    <!-- Información básica -->
+    <section id="info">
+      <h2>Sobre mí</h2>
+      <ul>
+        <li>Nombre: Joaquin Alonso De Jesus Orellana Bobadilla</li>
+        <li>Fecha de nacimiento: 23/08/2007</li>
+        <li>Edad: 18</li>
+        <li>País: Chile</li>
+        <li>Hobbies: Aprendiendo HTML y CSS</li>
+      </ul>
+    </section>
+    
+    <!-- Playlist -->
+    <section id="playlist">
+      <h2>Música</h2>
+      <p>Escucha mi playlist en YouTube Music:</p>
+      <a href="https://music.youtube.com/playlist?list=PLHIQbVHAALzmP1TbVvcCFdaB1ifIlq_aH&si=ibLZQM3IQ7XIKAGh" target="_blank">
+        🎵 Abrir playlist
+      </a>
+    </section>
+    
+    <!-- Contacto -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Puedes escribirme por <a href="https://wa.me/qr/64QCD2RGUFR7N1" target="_blank">WhatsApp</a></p>
+    </section>
+    
+  </main>
+  
+  <!-- Pie de página -->
+  <footer id="pie">
+    <p>© 2025 Joaquin Orellana</p>
+  </footer>
+  
+  
+  <!--script-->
+  <script>
+  // Espera 5 segundos y oculta el loader
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      const loader = document.getElementById('loader');
+      loader.style.opacity = '0';
+      loader.style.transition = 'opacity 0.5s ease';
+      setTimeout(() => loader.style.display = 'none', 500);
+    }, 1000); // 5000ms = 5 segundos
+  });
+</script>
+  
+   
+</body>
+</html>
